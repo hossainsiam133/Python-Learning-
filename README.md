@@ -49,7 +49,7 @@ The main goal of this repository is to:
 
 ## 🚀 How to Use
 Clone the repository:
-git clone https://github.com/yourusername/python_learning.git
+git clone https://github.com/hossainsiam133/python_learning.git
 cd python_learning
 
 Navigate to any folder and run the .py files to explore and test the code.
