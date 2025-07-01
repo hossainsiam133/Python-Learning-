@@ -1,4 +1,4 @@
-# 🐍 python_learning
+# 🐍 Python_Learning
 
 Welcome to my **Python Learning** repository!  
 This is a collection of Python code and notes that I’ve written while learning and practicing Python programming. It ranges from basic syntax to intermediate concepts and includes hands-on exercises and small projects.
@@ -39,9 +39,11 @@ The main goal of this repository is to:
 - Python 3.x
 - VS Code or any preferred IDE/text editor
 
+---
+
 > You can run any file using:
-```bash
-python3 filename.py
+  bash
+  python3 filename.py
 
 ---
 
@@ -52,8 +54,12 @@ cd python_learning
 
 Navigate to any folder and run the .py files to explore and test the code.
 
+---
+
 ## 📌 Note
 This repository will be continuously updated as I progress in my Python journey. Stay tuned for more advanced topics and projects!
+
+---
 
 ## 📬 Contact
 If you have suggestions or want to collaborate, feel free to reach out via GitHub or email.
