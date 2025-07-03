@@ -6,9 +6,5 @@ elif mark >= 41 and mark <= 79:
     print("B")
 elif mark >= 80 and mark <= 100:
     print("A+")
-    if mark % 2 == 0:
-        print("Even Number Marks")
-    else:
-        print("Even Number Marks")
 else:
     print("Failed")
