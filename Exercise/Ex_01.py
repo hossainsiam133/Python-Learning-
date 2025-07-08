@@ -1,3 +1,6 @@
+# To create a calculator solution capable of performing
+# addition, subtraction, multiplication, division, Mod and XOR
+# on two numbers with readable output.
 x = int(input("Enter the 1st INT Number: "))
 y = int(input("Enter the 2nd INT Number: "))
 print(
