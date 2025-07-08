@@ -5,6 +5,7 @@
 import time
 
 timestamp = time.strftime("%H:%M:%S")
+print("Current time in 24 hours Format:",end=" ")
 print(timestamp)
 hrs = int(time.strftime("%H"))
 min = time.strftime("%M")
@@ -15,8 +16,8 @@ sec = time.strftime("%S")
 if hrs >= 0 and hrs < 12:
     print(f"Good Morning its {12-hrs}:{min}:{sec} AM")
 elif hrs == 12:
-    print(f"Good Noon its {hrs}:{min}:{sec} PM")
+    print(f"Good Afternoon its {hrs}:{min}:{sec} PM")
 elif hrs > 12 and hrs < 17:
-    print(f"Good Noon its {hrs - 12}:{min}:{sec} PM")
+    print(f"Good Afternoon its {hrs - 12}:{min}:{sec} PM")
 else:
     print(f"Good Night its {hrs - 12}:{min}:{sec} PM")
