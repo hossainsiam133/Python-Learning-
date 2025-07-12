@@ -1,5 +1,5 @@
 def square(n):
-    print(n)
+    # print(n)
     """Enter a number n:"""
     return n**2
 
