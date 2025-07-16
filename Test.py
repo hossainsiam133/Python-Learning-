@@ -1,1 +1,2 @@
-print("This is Test.py")
+a = list(map(int, input().split()))
+print(type(a), a)
