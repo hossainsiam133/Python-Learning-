@@ -15,7 +15,7 @@ student["Age"] = 22
 student["City"] = "Narayanganj"
 
 show()
-student.pop("Name", "")
+student.pop("Name")
 student.popitem()
 show()
 
