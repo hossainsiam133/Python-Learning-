@@ -22,7 +22,6 @@
 try:
     b = 1 / 0
     a = int("Siam")
-
 except ZeroDivisionError:
     print("Invalid x/0")
 except ValueError:
