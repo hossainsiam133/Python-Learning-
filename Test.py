@@ -1,2 +1,6 @@
-a = list(map(int, input().split()))
-print(type(a), a)
+def std(*details):
+    li = list(details)
+    print(type(li), li[0])
+
+
+std(101, "Siam")
