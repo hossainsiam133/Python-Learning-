@@ -1,2 +1,2 @@
-n = int(input())
-print("0" * 3 + f"{n}")
+mult = lambda x, y: x * y
+print(mult(2,3))
