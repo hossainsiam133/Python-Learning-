@@ -1,35 +1,18 @@
-# In the name of ALLAH
+from math import *
 
-import sys
-sys.setrecursionlimit(1000000)
+iteration = 0
 
-# Constants
-mx = int(1e5) + 123
-h = [0] * mx
-dp = [-1] * mx
 
-def solve(i, n):
-    if i == n:
-        return 0
-    if dp[i] != -1:
-        return dp[i]
+def func(x0, x1):
+    if x0 == x1:
+        return x0
+    print(x0, x1)
+    global iteration
+    iteration += 1
+    return func(1 / sqrt(x0 + 1), x0)
 
-    ret1 = int(2e9)
-    ret2 = int(2e9)
 
-    if i + 1 <= n:
-        ret1 = abs(h[i] - h[i + 1]) + solve(i + 1, n)
-    if i + 2 <= n:
-        ret2 = abs(h[i] - h[i + 2]) + solve(i + 2, n)
-
-    dp[i] = min(ret1, ret2)
-    return dp[i]
-
-# Input
-n = int(input())
-heights = list(map(int, input().split()))
-for i in range(1, n + 1):
-    h[i] = heights[i - 1]
-
-# Output
-print(solve(1, n))
+root = func(0.5, -1)
+value = root**3 + root**2 - 1
+print(iteration, len(str(root)) - 3)
+# print(root, value)
