@@ -1,19 +1,21 @@
 # fixed point iteration method
 from math import *
-
-iteration = 0
-
+root = -1
 
 def func(x0, x1):
     if x0 == x1:
-        return x0
-    print(x0, x1)
-    global iteration
-    iteration += 1
-    return func(1 / sqrt(x0 + 1), x0)
+        global root
+        root = x0
+        return 0
+    return func(1 / sqrt(x0 + 1), x0)+1
 
 
-root = func(0.5, -1)
+iteration = func(0.5, -1)
+
 value = root**3 + root**2 - 1
-print(iteration, len(str(root)) - 3)
-# print(root, value)
+decimal_digits = len(str(root).split('.')[1])
+
+print("Iterations:", iteration)
+print("Digits after decimal:", decimal_digits)
+print("Root:", root)
+print("Function value at root:", value)
