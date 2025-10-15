@@ -1,3 +1,4 @@
+# fixed point iteration method
 from math import *
 
 iteration = 0
